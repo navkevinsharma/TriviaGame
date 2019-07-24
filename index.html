@@ -94,26 +94,45 @@
         losses = 0;
 
         // Set up the timer. 60 seconds
-        var timer = 60;
+        var timer = 10;
         $('#timer').text(timer);
         $('#startbutton').on('click', function(){
-            setInterval(goDown, 1*1000);
-        })
-
-    
-        // var counter = setInterval(goDown, 1*1000);
-            
-        function goDown(){
-            timer--;
-            $('#timer').text(timer);
-
-            if (timer == 0){
+            var counter = setInterval(function(){
+                if(timer>0){
+                timer--;
+                $('#timer').text(timer);
+                }
+                if(timer == 0){
                 $("input[type='submit']").attr('disabled', true);
                 clearInterval(counter);
-                $('#content').text('Time is up!')
-                }
-        }
-                
+                alert('Time is up!');
+
+            }
+            }, 1*1000);
+        });
+
+        // wins = 0;
+        // losses = 0;
+
+        // // Set up the timer. 60 seconds
+        // var timer = 5;
+        // var counter = setInterval(goDown, 1*1000);
+        // $('#timer').text(timer);
+        // $('#startbutton').on('click', function(){
+        //     setInterval(goDown, 1*1000);
+        // });
+            
+        // function goDown(){
+        //     $('#timer').text(timer);
+
+        //     if (timer > 0){
+        //         timer--;
+        //         $("input[type='submit']").attr('disabled', true);
+        //         clearInterval(counter);
+        //         alert('Time is up!')
+        //     }
+        // }
+    
 
         $("input[type='submit]").on('click', function(){
             var ans = $("input[name='answer']:checked").val();
@@ -129,7 +148,21 @@
                     $('#content').text('incorrect');
                     alert("you lost");
                 }
+                console.log(ans);
             var ans1 = $("input[name='answer']:checked").val();
+                
+            if(ans1 == 'correct'){
+                    wins++
+                    $('#wins').text(wins);
+                    $('#content').text('correct');
+                    alert("you won");
+                }else{
+                    losses++
+                    $('#losses').text(losses);
+                    $('#content').text('incorrect');
+                    alert("you lost");
+                }    
+
             var ans2 = $("input[name='answer']:checked").val();
             var ans3 = $("input[name='answer']:checked").val();
             var ans4 = $("input[name='answer']:checked").val();
