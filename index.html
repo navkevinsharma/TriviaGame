@@ -14,9 +14,11 @@
     <button id="startbutton">Start!</button>
 
    
-    <p id="timer">Timer: 60 Seconds
-        </p>
-    <form>
+    <p id="timer">Game Timer:</p>
+    <p>Wins:<span id="wins"></span></p>
+    <p>Losses:<span id="losses"></span></p>
+
+    <form action="" target="_self">
         
         <p id="question">1. When was NFL founded?</p>
         <input type="radio" name="answer" value="incorrect" id="w">August 20, 1935
@@ -25,63 +27,62 @@
         <input type="radio" name="answer" value="incorrect" id="w">August 20, 1958
 
         <p id="question">2. Which team has the most Super Bowl wins?</p>
-        <input type="radio" name="answer" value="correct" id="w">Pittsburg Steelers
-        <input type="radio" name="answer" value="incorrect" id="w">San Francisco 49ers
-        <input type="radio" name="answer" value="incorrect" id="w">Green Bay Packers
-        <input type="radio" name="answer" value="incorrect" id="w">New England Patriots
+        <input type="radio" name="answer1" value="correct" id="w">Pittsburg Steelers
+        <input type="radio" name="answer1" value="incorrect" id="w">San Francisco 49ers
+        <input type="radio" name="answer1" value="incorrect" id="w">Green Bay Packers
+        <input type="radio" name="answer1" value="incorrect" id="w">New England Patriots
 
         <p id="question">3. How many NFL teams are there?</p>
-        <input type="radio" name="answer" value="incorrect" id="w">35
-        <input type="radio" name="answer" value="incorrect" id="w">30
-        <input type="radio" name="answer" value="incorrect" id="w">31
-        <input type="radio" name="answer" value="correct" id="w">32
+        <input type="radio" name="answer2" value="incorrect" id="w">35
+        <input type="radio" name="answer2" value="incorrect" id="w">30
+        <input type="radio" name="answer2" value="incorrect" id="w">31
+        <input type="radio" name="answer2" value="correct" id="w">32
 
         <p id="question">4. How many players are there on an NFL roster?</p>
-        <input type="radio" name="answer" value="incorrect" id="w">50
-        <input type="radio" name="answer" value="incorrect" id="w">56
-        <input type="radio" name="answer" value="correct" id="w">53
-        <input type="radio" name="answer" value="incorrect" id="w">54
+        <input type="radio" name="answer3" value="incorrect" id="w">50
+        <input type="radio" name="answer3" value="incorrect" id="w">56
+        <input type="radio" name="answer3" value="correct" id="w">53
+        <input type="radio" name="answer3" value="incorrect" id="w">54
 
         <p id="question">5. Which team won the Super Bowl in 2019?</p>
-        <input type="radio" name="answer" value="correct" id="w">New England Patriots
-        <input type="radio" name="answer" value="incorrect" id="w">Oakland Raiders
-        <input type="radio" name="answer" value="incorrect" id="w">New York Jets
-        <input type="radio" name="answer" value="incorrect" id="w">Atlanta Falcons
+        <input type="radio" name="answer4" value="correct" id="w">New England Patriots
+        <input type="radio" name="answer4" value="incorrect" id="w">Oakland Raiders
+        <input type="radio" name="answer4" value="incorrect" id="w">New York Jets
+        <input type="radio" name="answer4" value="incorrect" id="w">Atlanta Falcons
 
         <p id="question">6. How many Super Bowl wins do the San Francisco 49ers have?</p>
-        <input type="radio" name="answer" value="incorrect" id="w">6
-        <input type="radio" name="answer" value="incorrect" id="w">3
-        <input type="radio" name="answer" value="correct" id="w">5
-        <input type="radio" name="answer" value="incorrect" id="w">4
+        <input type="radio" name="answer5" value="incorrect" id="w">6
+        <input type="radio" name="answer5" value="incorrect" id="w">3
+        <input type="radio" name="answer5" value="correct" id="w">5
+        <input type="radio" name="answer5" value="incorrect" id="w">4
 
         <p id="question">7. Where are the Oakland Raiders relocating to?</p>
-        <input type="radio" name="answer" value="incorrect" id="w">Sacramento
-        <input type="radio" name="answer" value="incorrect" id="w">Canada
-        <input type="radio" name="answer" value="correct" id="w">Las Vegas
-        <input type="radio" name="answer"value="incorrect" id="w">Montana
+        <input type="radio" name="answer6" value="incorrect" id="w">Sacramento
+        <input type="radio" name="answer6" value="incorrect" id="w">Canada
+        <input type="radio" name="answer6" value="correct" id="w">Las Vegas
+        <input type="radio" name="answer6"value="incorrect" id="w">Montana
 
         <p id="question">8. When was the last time San Francisco 49ers won the Super Bowl?</p>
-        <input type="radio" name="answer" value="incorrect" id="w">2012
-        <input type="radio" name="answer" value="correct" id="w">1995
-        <input type="radio" name="answer" value="Incorrect" id="w">1994
-        <input type="radio" name="answer" value="incorrect" id="w">1998
+        <input type="radio" name="answer7" value="incorrect" id="w">2012
+        <input type="radio" name="answer7" value="correct" id="w">1995
+        <input type="radio" name="answer7" value="Incorrect" id="w">1994
+        <input type="radio" name="answer7" value="incorrect" id="w">1998
 
         <p id="question">9. Where was Super Bowl 50 hosted?</p>
-        <input type="radio" name="answer" value="incorrect" id="w">Los Angeles
-        <input type="radio" name="answer" value="incorrect" id="w">Miami
-        <input type="radio" name="answer" value="incorrect" id="w">Houston
-        <input type="radio" name="answer" value="correct" id="w">Santa Clara
+        <input type="radio" name="answer8" value="incorrect" id="w">Los Angeles
+        <input type="radio" name="answer8" value="incorrect" id="w">Miami
+        <input type="radio" name="answer8" value="incorrect" id="w">Houston
+        <input type="radio" name="answer8" value="correct" id="w">Santa Clara
 
         <p id="question">10. Who is the greatest quarterback of all-time?</p>
-        <input type="radio" name="answer" value="incorrect" id="w">Joe Montana
-        <input type="radio" name="answer" value="incorrect" id="w">Payton Manning
-        <input type="radio" name="answer" value="correct" id="w">Tom Brady
-        <input type="radio" name="answer" value="incorrect" id="w">Tim Tebow<br>
+        <input type="radio" name="answer9" value="incorrect" id="w">Joe Montana
+        <input type="radio" name="answer9" value="incorrect" id="w">Payton Manning
+        <input type="radio" name="answer9" value="correct" id="w">Tom Brady
+        <input type="radio" name="answer9" value="incorrect" id="w">Tim Tebow<br>
 
         <button id= "submit" type="submit">Submit</button>
-
-       
-    </form>
+    
+     </form>
 
     <p id="content"></p>
     
@@ -89,44 +90,66 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
 
-            var timer = 3;
-            $('#timer').text(timer);
+        wins = 0;
+        losses = 0;
 
-            var counter  = setInterval(goDown, 1*1000);
-            
-            $('startbutton').on('click', function(){
-                startGame(counter);
-            })
-           
-
-            
-
-            function goDown() {
-                timer--;
-                $('#timer').text(timer);
-
-                if (timer == 0){
-                    $("input[type='submit']").attr('disabled', true);
-                    clearInterval(counter);
-                    $('#content').text('Time is up!')
-                    }
-                }
-
-            
-
-            $("input[type='submit]").on('click', function(){
-                var ans = $("input[name='answer']:checked").val();
-
-                if (ans == 'correct'){
-                    $('#content').text('correct');
-                }else{
-                    $('#content').text('incorrect')
-                }
-
-                event.preventDefault();
-            });
+        // Set up the timer. 60 seconds
+        var timer = 60;
+        $('#timer').text(timer);
+        $('#startbutton').on('click', function(){
+            setInterval(goDown, 1*1000);
+        })
 
     
+        // var counter = setInterval(goDown, 1*1000);
+            
+        function goDown(){
+            timer--;
+            $('#timer').text(timer);
+
+            if (timer == 0){
+                $("input[type='submit']").attr('disabled', true);
+                clearInterval(counter);
+                $('#content').text('Time is up!')
+                }
+        }
+                
+
+        $("input[type='submit]").on('click', function(){
+            var ans = $("input[name='answer']:checked").val();
+
+                if(ans == 'correct'){
+                    wins++
+                    $('#wins').text(wins);
+                    $('#content').text('correct');
+                    alert("you won");
+                }else{
+                    losses++
+                    $('#losses').text(losses);
+                    $('#content').text('incorrect');
+                    alert("you lost");
+                }
+            var ans1 = $("input[name='answer']:checked").val();
+            var ans2 = $("input[name='answer']:checked").val();
+            var ans3 = $("input[name='answer']:checked").val();
+            var ans4 = $("input[name='answer']:checked").val();
+            var ans5 = $("input[name='answer']:checked").val();
+            var ans6 = $("input[name='answer']:checked").val();
+            var ans7 = $("input[name='answer']:checked").val();
+            var ans8 = $("input[name='answer']:checked").val();
+            var ans9 = $("input[name='answer']:checked").val();
+
+            event.preventDefault();
+
+        
+        });
+
+        $('#submit').on('click', function(){
+            console.log(wins);
+            console.log(losses);
+        })
+
+        
     
     
     </script>
